@@ -1,0 +1,8 @@
+**/node_modules
+**/backup
+**/.env
+**/.cer
+**/.key
+**/*.cer
+**/*.key
+**/.git

@@ -1,0 +1,14 @@
+---
+version: '3'
+
+services:
+  fullstack:
+    image: Docker.autonubil.net/nzeumer/hue_outlook_sync
+    restart: always
+    ports:
+      - 3000:3000
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./hue_outlook_server/cert/cert.cer:/hue_outlook_syncer/cert/cert.cer
+      - ./hue_outlook_server/cert/key.key:/hue_outlook_syncer/cert/key.key
