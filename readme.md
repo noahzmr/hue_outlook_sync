@@ -7,7 +7,7 @@
   <h3 align="center">Hue Outlook Calendar Sync</h3>
 
   <p align="center">
-    A little inspiration for people who want to start a chat app with React!
+    An example of how to control your Hue lights using Outlook events.
     <br />
     <a href="https://github.com/noahzmr/hue_outlook_sync"><strong>Explore the docs »</strong></a>
     <br />
@@ -84,12 +84,16 @@ Welcome to my introduction to an Express JS app that uses React as a front-end a
 [![Sentry](https://img.shields.io/badge/Sentry-%231A1E24?style=for-the-badge&logo=Sentry&logoColor=%23FFFFFF)](https://sentry.io/)
 [![React](https://img.shields.io/badge/React-%2361DAFB?style=for-the-badge&logo=React&logoColor=%23FFFFFF)](https://react.dev/)
 [![Madge](https://img.shields.io/badge/Madge-%23FF6347?style=for-the-badge&logo=Madge&logoColor=%23FFFFFF)](https://github.com/pahen/madge)
+[![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white)](https://www.sonarqube.org/)
+[![Mermaid](https://img.shields.io/badge/Mermaid-003B6F?style=for-the-badge&logo=mermaid&logoColor=white)](https://mermaid-js.github.io/mermaid/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+
 
 ### Coming Soon
 
 - [x] Setup Guide via UI
 - [ ] Multiple Hue Bridges
-- [ ] The whole thing as a Docker container
+- [x] The whole thing as a Docker container
 - [x] Instructions for setting up Keycloak
   - [x] Client JSON
   - [x] Instructions to register Keycloak in Azure
