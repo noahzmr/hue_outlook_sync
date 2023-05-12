@@ -150,8 +150,16 @@ graph LR
 
 From for Components the React and Express App can be rendered with madge:
 
-![Backenmadge d](/img/backend.png)
-![madge Ui](/img/ui.png)
+<details>
+  <summary>madge Backend Image</summary>
+  <img src="img/backend.png" alt="madge Backend">
+</details>
+
+<details>
+  <summary>madge UI Image</summary>
+  <img src="img/ui.png" alt="madge UI">
+</details>
+<br/>
 
 To track down bugs when all bugs and their associated users are logged using Sentry, but what is Sentry exactly?
 Sentry.io is a web-based platform for application performance monitoring (APM) and error tracking of software applications. The platform enables software application developers and operators to detect and fix problems and errors in real-time to improve the performance and reliability of their applications.
