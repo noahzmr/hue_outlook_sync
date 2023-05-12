@@ -56,6 +56,10 @@
         <li><a href="#setup#the-syncer-application">The Syncer Application</a></li>
       </ul>
     </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#die-medocino">The medocino</a></li>
+    <li><a href="#support">Support</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -570,11 +574,7 @@ You can just pullen the Docker image, or just copy the project and use the `dock
   <li><input type="checkbox" id="Sentry" name="Sentry"/> <label for="Sentry">Sentry DSN in the React app</label></li>
 </ul>
 
-in the cert folder(s)
-
-- [ ] Sentry DSN in the React app
-
-this can be found in the following path `hue_outlook_ui/src/index.jsx` and the field where you have to insert something looks like this:
+The Sentry settings can be found in the following path `hue_outlook_ui/src/index.jsx` and the field where you have to insert something looks like this:
 
 ```jsx
 Sentry.init({
@@ -592,6 +592,8 @@ Sentry.init({
   tracesSampleRate: 1.0,
 });
 ```
+
+If you are accessing the page for the first time, and have not pre-edited `config.json` you will need to go to https://[your app ulr]:[the port if nessassary]/config/setup. The page is only accessible if there is no Keycloak Config.
 
 ### Requirement
 
@@ -727,4 +729,166 @@ In order to register the Syncer Application in Azure, points 1-4 must be taken f
 
 In the `API Permission` section we give the app the permission `Calendars.Read` so the app is only allowed to read calendar entries. All other interactions are handled with the http code: 403 Forbidden.
 
-In the `Overview` we add the URL of our app to the `Redirect URIs`, as Besipeile `https://demo.noerkelit.online:3001`.
+In the `Overview` we add the URL of our app to the `Redirect URIs`, as example `https://demo.noerkelit.online:3001`.
+
+## Contact
+
+<div style='display: flex; flex-direction: row; justify-content: space-around;'>
+
+[![XING](https://img.shields.io/badge/xing-%23006567.svg?style=for-the-badge&logo=xing&logoColor=white)](https://www.xing.com/profile/NoahDanyael_Zeumer/)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=LinkedIn&logoColor=%23FFFFFF)](https://www.linkedin.com/in/noah-zeumer-34b5081a5/?originalSubdomain=de)
+
+[![IONOS Email](https://img.shields.io/badge/IONOS%20Email-004080?style=for-the-badge&logo=mail.ru&logoColor=white)](mailto:noah@noerkelit.online)
+
+<a href='https://taag.co/GxxtAjXSpr1679622602xuDhbkVpDX' target="_blank"><img style="width: 100px;" alt='qr code medocino' src='/img/qr_medo.svg'/></a>
+
+</div>
+
+## The medocino
+
+<div style='display: flex; flex-direction: row; justify-content: space-around;'>
+
+<a href='https://medocino.net/' target="_blank"><img alt='medocino' style="width: 150px;" src='https://medocino.net/wp-content/uploads/2020/09/Logo-neu-1024x271.png'/></a>
+
+<a href='https://medocino.net/' style="width: 200px;" target="_blank"><img style="width: 150px;" alt='exanio' src='https://medocino.net/wp-content/uploads/2022/02/exanio-Logo.png'/></a>
+
+</div>
+
+medocino Hamburg GmbH is an experienced system house and IT service provider specializing in the development and support of IT infrastructures. With a team of dedicated IT experts, we offer comprehensive services and customized solutions for well-known corporations, medium-sized companies and start-ups.
+
+Our customers appreciate our expertise, experience and passion for IT. We see IT as a solid craft and offer individual solutions tailored to the specific requirements of each company. In doing so, we rely on reliable technologies, innovative approaches and proven methods.
+
+As the medocino group, we offer holistic support and stand by our customers as a reliable partner. Our team consists of highly qualified employees who are not only technically skilled but also highly customer-oriented.
+
+However, we are not only active as a service provider, but also as a training company for prospective IT specialists in system integration. I speak from experience, as I am currently doing an apprenticeship at medocino and am part of the team. With us, you have the opportunity to complete an apprenticeship in the IT field and also become part of our team. I can say from my own experience that we attach great importance to a sound education and offer you the chance to gain practical experience and to develop professionally.
+
+Our goal is to optimize our customers' IT infrastructure, improve processes and create real added value. We offer comprehensive services in the areas of storage technology, infrastructure automation, high availability solutions and data center services.
+
+Rely on medocino Group to help you overcome your IT challenges and successfully move your business forward. Contact us today to learn how we can help you.
+
+Below, I present a graphical overview of the wide range of services offered by medocino Hamburg GmbH.
+
+```mermaid
+graph LR
+F(Medocino)
+
+A(Dienstleistungen)
+A --> B(Beratung)
+A --> P(Planung)
+A --> O(Optimierung)
+A --> U(Unterstützung)
+A --> AN(Analyse)
+A --> E(Entwicklung)
+A --> BE(Betrieb)
+A --> UM(Umsetzung)
+
+B(Beratung)
+P(Planung)
+O(Optimierung)
+U(Unterstützung)
+AN(Analyse)
+E(Entwicklung)
+BE(Betrieb)
+UM(Umsetzung)
+
+
+B(Wegbereitung für Unternehmensziele)
+B --> IT(IT-Entlastung)
+B --> VA(Verteiltes Arbeiten)
+B --> SV(Standortverwaltung)
+B --> RM(Risikominimierung)
+B --> CP(Compliance)
+B --> ZD(Zentralisierte Datenhaltung)
+B --> DS(Datenschutz)
+B --> ES(Effizienzsteigerung)
+
+IT(IT-Entlastung)
+VA(Verteiltes Arbeiten)
+SV(Standortverwaltung)
+RM(Risikominimierung)
+CP(Compliance)
+ZD(Zentralisierte Datenhaltung)
+DS(Datenschutz)
+ES(Effizienzsteigerung)
+
+
+C(Wegbereitung für Software-Produkte & Software als Service)
+C --> NS(Netzwerksicherheit)
+C --> AV(Applikationsvirtualisierung)
+C --> SDD(Software-defined Datacenter)
+C --> MS(Monitoring/SIEM)
+C --> BDR(Backup & Disaster Recovery)
+C --> CDI(Composable disaggregated Infrastructure)
+C --> NV(Netzwerkvirtualisierung)
+C --> VS(Virenschutz)
+
+NS(Netzwerksicherheit)
+AV(Applikationsvirtualisierung)
+SDD(Software-defined Datacenter)
+MS(Monitoring/SIEM)
+BDR(Backup & Disaster Recovery)
+CDI(Composable disaggregated Infrastructure)
+NV(Netzwerkvirtualisierung)
+VS(Virenschutz)
+
+D(Wegbereitung für Plattform-Produkte & Plattform als Service)
+D --> OR(Orchestrierung)
+D --> HCI(Hyper Converged Infrastructure)
+D --> OS(Betriebssysteme)
+D --> AR(Archivierung)
+D --> SV(Storage-Virtualisierung)
+D --> SeV(Server-Virtualisierung)
+D --> CT(Container)
+D --> HIT(Hybrid IT)
+
+OR(Orchestrierung)
+HCI(Hyper Converged Infrastructure)
+OS(Betriebssysteme)
+AR(Archivierung)
+SV(Storage-Virtualisierung)
+SeV(Server-Virtualisierung)
+CT(Container)
+HIT(Hybrid IT)
+
+E(Wegbereitung für Infrastruktur-Produkte & Infrastruktur als Service)
+E --> PS(Primär-Speicher)
+E --> SS(Sekundär-Speicher)
+E --> SN(Speicher-Netzwerke)
+E --> RZ(RZ-Betrieb)
+E --> SV(Server)
+E --> EN(Ethernet-Netzwerke)
+E --> EFP(Enterprise File Data Platform)
+E --> HPC(High Performance Computing)
+
+PS(Primär-Speicher)
+SS(Sekundär-Speicher)
+SN(Speicher-Netzwerke)
+RZ(RZ-Betrieb)
+SV(Server)
+EN(Ethernet-Netzwerke)
+EFP(Enterprise File Data Platform)
+HPC(High Performance Computing)
+
+F --> A
+F --> B
+F --> C
+F --> D
+F --> E
+```
+
+I am incredibly grateful to have the opportunity to complete my training at Medocino. Here, I not only get the chance to familiarize myself with the classic tasks of system integration, but also to gain insights into the exciting areas of software development and IT security.
+
+What makes working here particularly rewarding is the variety of services that are available to me. For example, I can access tools such as Sentry, GitLab and SonarQube to optimize my work and develop high-quality solutions. These resources allow me to develop my skills and continuously improve in my area of expertise.
+
+I am excited to see what exciting projects and challenges are still waiting for me and look forward to being part of the Medocino team.
+
+## Support
+
+If you want to support my work, you are welcome to buy me a cup of coffee. Just visit my [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/noahdnylzmr)
+and enter an amount of your choice. I am grateful for any support.
+Thank you in advance!
+
+## License
+
+This project is licensed under the [BSD 2-Clause License](https://github.com/noahzmr/arduino-alarmanlage/blob/main/LICENSE.md). Please note the terms and conditions of this license.
