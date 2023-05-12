@@ -560,19 +560,25 @@ For the app to communicate with Keycloak without problems, a valid SSL certifkat
 
 You can just pullen the Docker image, or just copy the project and use the `docker-compose`. Whether you want to set it up with Docker or local you need to set the following values:
 
-- [ ] HTTPS 
-  - [ ] `cert.cer` file
-  - [ ] `key.key` file
+<ul>
+  <li><input type="checkbox" id="HTTPS" name="HTTPS"/> <label for="HTTPS">HTTPS</label>
+    <ul>
+      <li><input type="checkbox" id="cert" name="cert"/> <label for="cert">cert.cer file</label></li>
+      <li><input type="checkbox" id="key" name="key"/> <label for="key">key.key file</label></li>
+    </ul>
+  </li>
+  <li><input type="checkbox" id="Sentry" name="Sentry"/> <label for="Sentry">Sentry DSN in the React app</label></li>
+</ul>
 
 in the cert folder(s)
 
 - [ ] Sentry DSN in the React app
 
-this can be found in the following path `hue_outlook_ui/src/index.jsx` and the field where you have to insert something looks like this: 
+this can be found in the following path `hue_outlook_ui/src/index.jsx` and the field where you have to insert something looks like this:
 
 ```jsx
 Sentry.init({
-  dsn: '<YOUR SENTRY DSN>',
+  dsn: "<YOUR SENTRY DSN>",
   integrations: [new BrowserTracing()],
   // environment:
   //   location.hostname === 'localhost' ||
@@ -583,8 +589,8 @@ Sentry.init({
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.
   // We recommend adjusting this value in production
-  tracesSampleRate: 1.0
-})
+  tracesSampleRate: 1.0,
+});
 ```
 
 ### Requirement
@@ -689,7 +695,6 @@ Next, we need to set Microsoft as the Identify Provider, which we do:
 
 To be able to log in with keycloak we have to register the app in Azure.
 
-
 #### Keycloak
 
 1. Log in to Microsoft Azure and navigate to the Azure portal.
@@ -723,4 +728,3 @@ In order to register the Syncer Application in Azure, points 1-4 must be taken f
 In the `API Permission` section we give the app the permission `Calendars.Read` so the app is only allowed to read calendar entries. All other interactions are handled with the http code: 403 Forbidden.
 
 In the `Overview` we add the URL of our app to the `Redirect URIs`, as Besipeile `https://demo.noerkelit.online:3001`.
-
